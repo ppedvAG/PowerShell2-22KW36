@@ -27,3 +27,4 @@
 - Variablen
 - Skriptsicherheit
 - SkriptBeispiel
+- SkriptUebung

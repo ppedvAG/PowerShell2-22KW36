@@ -46,7 +46,7 @@ param(
 [ValidateScript({Test-NetConnection -ComputerName $PSItem -CommonTCPPort WinRM -InformationLevel Quiet})]
 [string]$ComputerName = "localhost"
 )
-$Newest = 3
+
 Write-Verbose -Message "Diese Nachricht wird nur ausgegeben wenn das Skript mit -Verbose gestartet wurde"
 
 Get-EventLog -LogName Security -ComputerName $ComputerName | Where-Object EventId -eq $EventId | Select-Object -First $Newest
