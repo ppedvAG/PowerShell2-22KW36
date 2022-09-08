@@ -24,3 +24,6 @@
 # Agenda Teil 2:
 - Verzweigungen
 - PipeLine2
+- Variablen
+- Skriptsicherheit
+- SkriptBeispiel
