@@ -30,3 +30,4 @@
 - SkriptUebung
 - Git
 - Fehlerbehandlung
+- Debugging
