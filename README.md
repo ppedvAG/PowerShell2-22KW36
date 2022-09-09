@@ -31,3 +31,5 @@
 - Git
 - Fehlerbehandlung
 - Debugging
+- PowerShell Remoting
+- WMI / CIM
