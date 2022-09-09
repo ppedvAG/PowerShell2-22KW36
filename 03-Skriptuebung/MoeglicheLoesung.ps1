@@ -37,8 +37,11 @@ if(Test-Path -Path $TestDirPath -PathType Container)
     }
     else
     {
-        Write-Warning -Message "Der Ordner ist bereits vorhanden"
-        exit
+        #erzeugen einer Exception / terminierender Fehler 
+        throw "Der Ordner ist bereits vorhanden"
+
+        #Write-Error erzeugt normal einen nicht terminierenden Fehler. Mit ErrorAction Stop lässt sich allerdings ein terminierender erzeugen
+        #Write-Error -Message "Der Ordner ist bereits vorhanden" -ErrorAction Stop
     }
 }
 
